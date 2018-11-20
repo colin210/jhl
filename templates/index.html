@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h2 style="text-align: center">幼儿园学习内容</h2>
+    <div id="container" >
+        <span v-on:click.prevent id="btngroup"  >
+        <span id="bt1" v-on:click=makeActive("按钮1")  class="btn btn-primary">语文</span>
+        <span id="bt1" v-on:click=makeActive("按钮2")  class="btn btn-success">英语</span>
+        <span id="bt1" v-on:click=makeActive("按钮3")  class="btn btn-info">数学</span>
+        </span>
+    </div>
+
+    <div style="height:80%">
+        <div id="content" >
+            内容在这里
+        </div>
+    </div>
+{% endblock %}
